@@ -1,0 +1,26 @@
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5em;
+}
+
+.tweetText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.write {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+}
+
+.writeTweet {
+  font-family: 'Source Sans 3', sans-serif;
+}
