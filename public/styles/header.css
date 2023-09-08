@@ -1,0 +1,21 @@
+header {
+  height: 520px;
+  width: 100%;
+  background-color: #d69421;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.your {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+}
+
+.name {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+}
