@@ -1,0 +1,51 @@
+.tweets {
+  margin-top: 2em;
+  border: 5px solid #545149;
+  padding: 1em;
+  padding-bottom: 0;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+}
+
+.tweets:hover {
+  box-shadow: 7px 7px #bebebe
+}
+
+.user-info {
+  height: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-name {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+}
+
+.user-handle {
+  color: #bebebe;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+}
+
+.tweets-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 5px solid #545149;
+  padding-right: 1em;
+  padding-left: 1em;
+  font-size: 18px;
+}
+
+.icons i {
+  margin-right: 5px;
+  color: #4056A1
+}
+
+.icons i:hover {
+  color: #d69421
+}
