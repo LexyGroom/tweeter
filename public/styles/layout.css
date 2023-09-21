@@ -24,13 +24,13 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- body {
+body {
   font-family: 'Source Sans 3', sans-serif;
- }
+}
 
- nav {
+nav {
   font-family: 'Bungee', cursive;
- }
+}
 
 main {
   width: 90%;
