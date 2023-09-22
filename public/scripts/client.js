@@ -1,11 +1,5 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 $(document).ready(function() {
-  // Your code here
+
   const data = [
     {
       "user": {
@@ -25,14 +19,13 @@ $(document).ready(function() {
         "handle": "@rd"
       },
       "content": {
-        "text": "Je pense , donc je suis"
+        "text": "Je pense, donc je suis"
       },
       "created_at": 1461113959088
     }
   ]
 
   const renderTweets = function(tweets) {
-    console.log('Rendering tweets:', tweets); // Add this line for debugging
     const $tweetsContainer = $('#tweets-container');
 
     $tweetsContainer.empty();
@@ -68,4 +61,17 @@ $(document).ready(function() {
   };
 
   renderTweets(data);
+});
+
+$(document).ready(function() {
+  $("#myForm").submit(function(event) {
+    event.preventDefault();
+    let formData = $(this).serialize();
+
+    console.log("Serialized Form Data:", formData);
+
+    $.post("http://localhost:8080/tweets/", formData, function(response) {
+      $(".result").html(response);
+    });
+  });
 });
