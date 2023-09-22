@@ -1,4 +1,4 @@
-.tweets {
+.tweets-container {
   margin-top: 2em;
   border: 5px solid #545149;
   padding: 1em;
@@ -7,7 +7,7 @@
   font-weight: 600;
 }
 
-.tweets:hover {
+.tweets-container:hover {
   box-shadow: 7px 7px #bebebe
 }
 
