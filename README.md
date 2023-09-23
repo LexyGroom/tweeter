@@ -17,5 +17,5 @@ Tweeter is a simple, single-page Twitter clone.
 
 ## Screenshots
 
-![Screenshot](URL)
-![Screenshot](URL)
+![Screenshot of desktop layout](https://github.com/LexyGroom/tweeter/blob/master/docs/Desktop.png?raw=true)
+![Screenshot of mobile layout](https://github.com/LexyGroom/tweeter/blob/master/docs/Mobile%20Layout.png?raw=true)
