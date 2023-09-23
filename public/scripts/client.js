@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     for (let tweet of tweets) {
       const $tweetElement = createTweetElement(tweet);
-      $tweetsContainer.append($tweetElement);
+      $tweetsContainer.prepend($tweetElement);
     }
   };
 
@@ -44,7 +44,8 @@ $(document).ready(function() {
       return;
     }
 
-    if (formData.length > 140) {
+    const remainingChars = 140 - $("#tweet-text").val().length;
+    if (remainingChars < 0) {
       alert("Your tweet cannot be more than 140 characters!");
       return;
     }
