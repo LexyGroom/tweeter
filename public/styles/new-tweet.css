@@ -40,3 +40,9 @@ button {
 .invalid-counter {
   color: red;
 }
+
+.error-messages {
+  color: red;
+  font-weight: bold;
+  display: none;
+}

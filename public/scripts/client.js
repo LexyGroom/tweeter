@@ -40,18 +40,19 @@ $(document).ready(function() {
     let formData = $(this).serialize();
 
     if (formData.trim() === 'text=') {
-      alert("Your tweet cannot be empty!");
+      $('.error-messages').text("Your tweet cannot be empty!").slideDown();
       return;
     }
 
     const remainingChars = 140 - $("#tweet-text").val().length;
     if (remainingChars < 0) {
-      alert("Your tweet cannot be more than 140 characters!");
+      $('.error-messages').text("Your tweet cannot be more than 140 characters!").slideDown();
       return;
     }
 
     $.post("http://localhost:8080/tweets/", formData, function(response) {
       $(".result").html(response);
+      $(".error-messages").slideUp();
       loadTweets();
     });
     $(this)[0].reset();
