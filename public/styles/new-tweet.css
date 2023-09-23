@@ -3,6 +3,8 @@
   flex-direction: column;
   font-family: 'Source Sans 3', sans-serif;
   font-weight: 600;
+  padding: 1em;
+  padding-bottom: 0;
 }
 
 textarea {
