@@ -39,10 +39,21 @@ $(document).ready(function() {
     event.preventDefault();
     let formData = $(this).serialize();
 
+    if (formData.trim() === 'text=') {
+      alert("Your tweet cannot be empty!");
+      return;
+    }
+
+    if (formData.length > 140) {
+      alert("Your tweet cannot be more than 140 characters!");
+      return;
+    }
+
     $.post("http://localhost:8080/tweets/", formData, function(response) {
       $(".result").html(response);
       loadTweets();
     });
+    $(this)[0].reset();
   });
 
   let loadTweets = function() {
