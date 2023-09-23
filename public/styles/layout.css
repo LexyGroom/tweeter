@@ -24,6 +24,8 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+/* Other styles */
+
 body {
   font-family: 'Source Sans 3', sans-serif;
 }
@@ -37,3 +39,29 @@ main {
   margin: 0 auto;
   background-color: #f4f1ec;
  }
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  
+  body {
+    display: flex;
+  }
+
+  .logged-in {
+    width: 33.3%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 66.6%;
+    padding: 60px;
+    padding-top: 180px;
+  }
+
+  .logged-in {
+    margin: 60px;
+    margin-top: 180px;
+    justify-content: center;
+  }
+}
